@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arraynum=[9];
+    let bigger10 = " ";
+    for(i=0;i<=9;i++)
+    {
+        arraynum[i]= +prompt("Nhap vao 1 so bat ky:");
+    }
+    for(i=0;i<=9;i++)
+    {
+        if(arraynum[i] >= 10)
+        {
+            bigger10 = bigger10 + arraynum[i] + " , ";
+        }
+    }
+    document.write("Cac so nguyen lon hon 10 trong mang la: "+ bigger10);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arraynum=[];
+    let num = +prompt("Nhap vao do dai cua mang: ");
+    for(i =0; i<num;i++)
+    {
+        arraynum[i] = +prompt("Nhap vao 1 so nguyen bat ky: ");
+    }
+    let numcheck = +prompt("Nhap vao phan tu so nguyen V: ");
+    let count = 0;
+    let temp;
+    document.write("Mang da cho ban dau la: " + arraynum.join(" , ") +"<br>");
+    for (i=0;i<num-1;i++) // chỉ check đến phần tử num - 2 thì dừng lại
+    {
+        if(arraynum[i]==numcheck)
+        {
+            temp = arraynum[i];
+            arraynum[i]=arraynum[i+1];
+            arraynum[i+1]=temp;
+        }
+        else
+        {
+            count ++;
+        }
+    }
+    if(count==num-1) //do chỉ check đến (num -2) nên giá trị max của count là (num -1)
+    {
+        alert("V is not in the array");
+        document.write("Mang sau khi kiem tra la: " + arraynum.join(" , "));
+    }
+    else
+    {
+        arraynum.pop(); //kiem tra ky do dai cua mang//
+        alert("V is in the array");
+        document.write("Phan tu so nguyen V la: " + numcheck + "<br>");
+        document.write("Mang sau khi xoa V la: " + arraynum.join(" , ") + "<br>");
+    }
+</script>
+</body>
+</html>

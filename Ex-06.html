@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arraynum=[];
+    let num = +prompt("Nhap vao do dai cua mang: ");
+    for(i =0; i<num;i++)
+    {
+        arraynum[i] = +prompt("Nhap vao 1 so nguyen bat ky: ");
+    }
+    let numcheck = +prompt("Nhap vao so nguyen V can tim: ");
+    for (i=0;i<num;i++)
+    {
+        if(arraynum[i]==numcheck)
+        {
+            alert(numcheck + " is in the array");
+            break;
+        }
+        if (i==num-1)
+        {
+            alert(numcheck+ " is not in the array");
+        }
+    }
+
+</script>
+</body>
+</html>

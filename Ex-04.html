@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arraynum=[];
+    let num = +prompt("Nhap vao do dai cua mang: ");
+    for(i =0; i<num;i++)
+    {
+        arraynum[i] = +prompt("Nhap vao 1 so nguyen bat ky: ");
+    }
+    document.write("Mang ban dau la: " + arraynum.join(" , ") +"<br>");
+    let temp;
+    for (i= 0;i<num/2;i++)
+    {
+        temp = arraynum[i];
+        arraynum[i] = arraynum[num-1-i];
+        arraynum[num-1-i] = temp;
+    }
+    document.write("Mang sau khi dao chieu la: " + arraynum.join(" , "));
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arraynum=[];
+    let num = +prompt("Nhap vao do dai cua mang: ");
+    for(i =0; i<num;i++)
+    {
+        arraynum[i] = +prompt("Nhap vao 1 so nguyen bat ky: ");
+    }
+    let count = 0;
+    let negative = "";
+    for(i=0;i<num;i++)
+    {
+        if(arraynum[i]<0)
+        {
+            count ++;
+            negative = negative + arraynum[i] + " , ";
+        }
+    }
+    document.write("Mang co " + count + " so nguyen am. Do la cac so: "+negative);
+</script>
+</body>
+</html>

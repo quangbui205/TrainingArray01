@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let array01 =[];
+    let array02 = [];
+    let arraytotal =[];
+    let num1= +prompt("Nhap do dai cua Mang 1: ");
+    for(i=0;i<num1;i++)
+    {
+        array01[i]= prompt("Nhap 1 gia tri cho Mang 1: ");
+    }
+    let num2= +prompt("Nhap do dai cua Mang 2: ");
+    for(i=0;i<num2;i++)
+    {
+        array02[i]= prompt("Nhap 1 gia tri cho Mang 2: ");
+    }
+    // numtotal= num1 + num2;
+    // for(i=0;i<numtotal;i++)
+    // {
+    //     if(i<num1)
+    //     {
+    //         arraytotal[i]=array01[i];
+    //     }
+    //     if(i>=num1)
+    //     {
+    //         j = i - num1;
+    //         arraytotal[i] = array02[j];
+    //     }
+    // }
+    // document.write("Mang 1 la: " + array01.join(" , ")+ "<br>");
+    // document.write("Mang 2 la: " + array02.join(" , ") + "<br>");
+    // document.write("Mang sau khi cong Mang 1 va Mang 2 la: " + arraytotal.join(" , "));
+    arraytotal=arraytotal.concat(array01,array02);
+    document.write("Mang sau khi cong Mang 1 va Mang 2 la: " + arraytotal.join(" , "));
+
+</script>
+</body>
+</html>
